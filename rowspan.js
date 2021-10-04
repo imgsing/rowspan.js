@@ -7,7 +7,7 @@ initComponent: function() {
   
   me.view.cellTpl = new Ext.XTemplate([
          '<td <tpl if="column.rowSpan">rowSpan="{column.rowSpan}"</tpl> class="{tdCls}" {tdAttr} {[Ext.aria ? "id=\\"" + Ext.id() + "\\"" : ""]} style="width:{column.cellWidth}px;<tpl if="tdStyle">{tdStyle}</tpl>" tabindex="-1" {ariaCellAttr} data-columnid="{[values.column.getItemId()]}">',
-'<div {unselectableAttr} class="' + Ext.baseCSSPrefix",
+'<div {unselectableAttr} class=",
 '</td>'
 ]);
 },
